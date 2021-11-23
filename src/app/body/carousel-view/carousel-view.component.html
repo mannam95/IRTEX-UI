@@ -1,0 +1,59 @@
+<div class="container carouselContainer" style="display: flex;">
+    <!-- <div class="row"></div> -->
+    <mat-card class="slide-card" style="flex: 1 1 auto;">
+        <mat-card-header>
+          <mat-card-title>Aeroplane</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let slide of dynamicSlides">
+                  <ng-template carouselSlide [id]="slide.id">
+                    <img style="width: 15em;height: 15em;" [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="slide-card" style="flex: 1 1 auto;">
+        <mat-card-header>
+          <mat-card-title>Aeroplane</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let slide of dynamicSlides">
+                  <ng-template carouselSlide [id]="slide.id">
+                    <img style="width: 15em;height: 15em;" [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="slide-card" style="flex: 1 1 auto;">
+        <mat-card-header>
+          <mat-card-title>Aeroplane</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let slide of dynamicSlides">
+                  <ng-template carouselSlide [id]="slide.id">
+                    <img style="width: 15em;height: 15em;" [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="slide-card" style="flex: 1 1 auto;">
+        <mat-card-header>
+          <mat-card-title>Aeroplane</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let slide of dynamicSlides">
+                  <ng-template carouselSlide [id]="slide.id">
+                    <img style="width: 15em;height: 15em;" [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+        </mat-card-content>
+      </mat-card>
+</div>
