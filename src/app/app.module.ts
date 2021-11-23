@@ -10,28 +10,25 @@ import { MatCardModule } from '@angular/material/card';
 
 
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ImageSearchComponent } from './body/image-search/image-search.component';
-import { ResultsComponent } from './body/results/results.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CarouselViewComponent } from './body/carousel-view/carousel-view.component';
+import { BodyModule } from './body/body.module'
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BodyComponent,
     FooterComponent,
-    ImageSearchComponent,
-    ResultsComponent,
-    CarouselViewComponent
+    ContactComponent,
+    routingComponents
   ],
   imports: [
     BrowserModule,
@@ -43,7 +40,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     MatCardModule,
     BrowserAnimationsModule,
     NgbModule,
-    CarouselModule    
+    CarouselModule,
+    FontAwesomeModule,
+    BodyModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
