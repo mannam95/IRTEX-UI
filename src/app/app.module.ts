@@ -2,11 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 //Material Imports
-import { MatSliderModule } from '@angular/material/slider';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
+import {MaterialModule} from './sharedModule/material.module';
 
 
 
@@ -33,16 +29,12 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatSliderModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatCardModule,
     BrowserAnimationsModule,
     NgbModule,
     CarouselModule,
     FontAwesomeModule,
-    BodyModule    
+    BodyModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,3 +5,9 @@
 .slide-card {
     max-width: 300px;
   }
+
+  .carouselImage {
+    width: 18em;
+    height: 17em; 
+    cursor: pointer;
+  }
