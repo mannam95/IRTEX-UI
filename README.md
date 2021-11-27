@@ -1,27 +1,58 @@
-# IRTEXUI
+# IRTEX
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+## Still In-Progess
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
 
-## Build
+* Now in order see the UI page running properly, you need to configure and run the business server(The instructions can be seen in business server part)  
+* Node Js, Angular-CLI needs to be installed.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Installing
 
-## Running unit tests
+* Clone the repository or download and unzip it.    
+* Install the npm packages
+   ```
+    #Do this in the project folder console.
+    npm install
+  ```
+* Run the following command to start the server
+  ```
+    ng server --open
+  ```
+ 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Running the tests
 
-## Running end-to-end tests
+### Offline Usage:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* Start the server by running the above commands
+* Browse a valid image file, test it. 
+* You can find the results in a tabular view.
+* You can see further details by clicking on explain button.
+* Now you have local textual explanation.
+* And also visual explanation(Can click this if visual explanation is needed).
+* Always you can reset by clicking the Reset button on the image icon or can directly browse a new image.
 
-## Further help
+### Online Usage:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* As of now it's hosted in the following URL  
+[IRTEX](https://xvision21.azurewebsites.net/?dynastat=no&hosted=yes).
+* Can follow the same rules which are mentioned in offline usage.
+
+
+## Note
+
+* Below are the possible list image formats which are accepted.
+
+```
+".XBM", ".TIF", ".PJP", ".PJPEG", ".JFIF", ".WEBP", ".ICO", ".TIFF", ".BMP", ".PNG", ".JPEG", ".SVGZ", ".JPG", ".GIF", ".SVG", "EXIF"
+```
+
+## Authors
+
+* **Venkata Srinath Mannam**
