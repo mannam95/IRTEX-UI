@@ -41,7 +41,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Online Usage:
 
 * As of now it's hosted in the following URL  
-[IRTEX](https://xvision21.azurewebsites.net/?dynastat=no&hosted=yes).
+[IRTEX](https://irtex-ui.herokuapp.com/).
 * Can follow the same rules which are mentioned in offline usage.
 
 
