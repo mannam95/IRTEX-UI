@@ -1,14 +1,9 @@
 version: '3'
 services:
-    frontend:
-        image: angular-webapp
+    irtex-frontend:
+        image: irtex-ui
         build:
             context: .
-            dockerfile: Dockerfile.dev
+            dockerfile: Dockerfile
         ports: 
-            - "4200:4200"
-        volumes:
-            - "./:/angular"
-            - "ang_node_vol:/angular/node_modules"
-volumes:
-  ang_node_vol:
+            - "4200:80"
