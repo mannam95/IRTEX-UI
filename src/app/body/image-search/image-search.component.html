@@ -8,7 +8,7 @@
                             <div>
                                 <label for="upload_box" id="formupload-button" style="cursor: pointer;"
                                     (click)="formupload_box.click()" title="Upload an image"></label>
-                                <input id="formupload_box" #formupload_box type="file" name="image"
+                                <input disabled id="formupload_box" #formupload_box type="file" name="image"
                                     title="Upload an image" aria-label="Upload an image to search for" accept="Image/*">
                             </div>
                             <div>
@@ -23,13 +23,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row" id="queryImageID" style="display: none; background-color: rgba(246, 249, 253, 1);">
-        <div class="container" style="width: 70%;margin-top: 0.2em;margin-bottom: 0.2em;">
-            <div class="row">
-                <div class="col-sm-3 col-xs-3 imgVerCenter" id="viewPartdiv"></div>
-                <div class="col-sm-9 col-xs-9" id="globalDivID" style="justify-content: center;"></div>
+            <!-- Add a banner that tells this demo XAI search, only with following images the search can be explore  -->
+            <div>
+                <span>
+                    <h1 style="text-align: center; color: #c7fc05; margin-top: 10px;">
+                        <b>NOTE:</b> This is demo of our XAI search!!! The search can be explored only with the following images.
+                    </h1>
+                </span>
             </div>
         </div>
     </div>
