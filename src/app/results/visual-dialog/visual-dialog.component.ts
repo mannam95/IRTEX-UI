@@ -20,10 +20,6 @@ export class VisualDialogComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onNoClick(): void {
-    this.dialogRef.close();
-  }
-
   getImageUrl(filename: string): string {
     // Return the URL or path to the image based on the filename
     return '/assets/images/explainimages/' + filename;
