@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BodyModule } from './body/body.module'
+import { ResultsModule } from './results/results.module'
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -32,6 +33,7 @@ import { ContactComponent } from './contact/contact.component';
     CarouselModule,
     FontAwesomeModule,
     BodyModule,
+    ResultsModule,
     MaterialModule
   ],
   providers: [],

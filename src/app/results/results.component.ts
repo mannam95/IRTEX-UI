@@ -5,9 +5,11 @@ import { plainToInstance } from 'class-transformer';
 import { IServerResults, ServerResults, Similarityarr, TopScore } from './interface/query_results_interface';
 import { MaterialModule } from '../sharedModule/material.module';
 import { MatTableDataSource } from '@angular/material/table';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import * as tf from '@tensorflow/tfjs';
+import { VisualDialogComponent } from './visual-dialog/visual-dialog.component';
 
 @Component({
   selector: 'app-results',
@@ -44,7 +46,7 @@ export class ResultsComponent implements OnInit {
   highLevelFeaturesImportance: string[] = [];
 
 
-  constructor(private backendAPIService: BackendAPIService) {
+  constructor(private backendAPIService: BackendAPIService, public dialog: MatDialog) {
     this.queryImagePath = this.backendAPIService.queryImagePath;
     this.currentImageResults = plainToInstance(ServerResults, [JSON.parse(JSON.stringify(this.backendAPIService.slideData))])[0];
     // console.log('Initial results:', this.currentImageResults);
@@ -77,6 +79,15 @@ export class ResultsComponent implements OnInit {
 
   // Triggered when the user clicks on the Visual Explanation button
   onVisualExpBtnClick(row: any): void {
+    const dialogRef = this.dialog.open(VisualDialogComponent, {
+      // width: '250px',
+      data: row
+    });
+
+    dialogRef.afterClosed().subscribe((result: any) => {
+      console.log('The dialog was closed', row);
+      // this.animal = result;
+    });
   }
 
 

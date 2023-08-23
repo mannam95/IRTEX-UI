@@ -1,0 +1,19 @@
+<button mat-icon-button class="close-button" [mat-dialog-close]="true">
+    <mat-icon class="close-icon" color="warn">close</mat-icon>
+  </button>
+
+  <div class="row">
+    <div class="col-md-6 img-container">
+        <img [src]="getImageUrl(currentRow.query_img_file_name)" alt="Image not found" height="350px" width="450px" />
+        <span>Query Image</span>
+    </div>
+    <div class="col-md-6 img-container">
+        <img [src]="getImageUrl(currentRow.base_img_file_name)" alt="Image not found" height="350px" width="450px" />
+        <span>Result Image</span>
+    </div>
+  </div>
+  
+  <!-- <h1 mat-dialog-title>Hi Srinath</h1>
+  <div mat-dialog-content>
+    <p>What's your favorite animal?</p>
+  </div> -->
