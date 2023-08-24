@@ -67,7 +67,7 @@ body {
     }
   }
 
-  .clickable-image {
+  .cssImage {
     width: 100%;
     height: 350px;
     background-image: url('../../assets/images/about/srinathdp.jpeg');
