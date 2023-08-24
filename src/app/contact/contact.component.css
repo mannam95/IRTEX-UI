@@ -66,3 +66,10 @@ body {
       display: block;
     }
   }
+
+  .clickable-image {
+    width: 100%;
+    height: 350px;
+    background-image: url('../../assets/images/about/srinathdp.jpeg');
+    background-size: cover;
+  }
