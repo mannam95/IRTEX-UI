@@ -1,32 +1,19 @@
-.close-button{
-    float: right;
-    top:-24px;
-    right:-24px;
-  }
-  
-  .close-icon {
-    transition: 1s ease-in-out;
-  }
-  
-  .close-icon:hover {
-    transform: rotate(180deg);
-  }
-  
-  ::ng-deep .icon-outside .close-button{
-    float: right;
-    top:-52px;
-    right:-52px;
-  }
-  
-  ::ng-deep .icon-outside .mat-dialog-container {
-   overflow: unset
-  }
+.container {
+  text-align: center;
+}
 
-  .img-container {
-    display:flex;
-     flex-wrap: wrap;
-    align-content: space-evenly;
-    }
-    .img-container img{
-    width:50%;
-    }
+.explanationsDiv {
+  text-align: left;
+}
+
+.mat-cell {
+  padding: 10px;
+}
+
+.spanText {
+  padding: 8px;
+  font-family: Arial;
+  background-color: #e7e7e7;
+  color: black;
+  font-size: x-large;
+}

@@ -1,14 +1,32 @@
-<button mat-icon-button class="close-button" [mat-dialog-close]="true">
-    <mat-icon class="close-icon" color="warn">close</mat-icon>
-  </button>
+<div class="container">
 
-  <div class="row">
-    <div class="col-md-6 img-container">
-        <img [src]="getImageUrl(currentRow.query_img_file_name)" alt="Image not found" height="350px" width="450px" />
-        <span>Query Image</span>
+  <div class="explanationsDiv">
+    <div>
+      <h1>{{getTotalObjectsCountString()}}</h1>
+      <h2>{{getSimilarObjectsCountString()}}</h2>
     </div>
-    <div class="col-md-6 img-container">
-        <img [src]="getImageUrl(currentRow.base_img_file_name)" alt="Image not found" height="350px" width="450px" />
-        <span>Result Image</span>
-    </div>
+
+    <div [innerHTML]="getIndividualObjectExplanations()"></div>
   </div>
+
+  <!-- Below is the images comparison -->
+  <table class="mat-table">
+    <tr class="mat-row">
+      <th class="mat-cell">
+        <img [src]="getImageUrl(currentRow.query_img_file_name)" alt="Image not found" height="350px"
+          width="450px" />
+      </th>
+      <th class="mat-cell">
+        <img [src]="getImageUrl(currentRow.base_img_file_name)" alt="Image not found" height="350px" width="450px" />
+      </th>
+    </tr>
+    <tr class="mat-row">
+      <td class="mat-cell">
+        <span class="spanText">Query Image</span>
+      </td>
+      <td class="mat-cell">
+        <span class="spanText">Result Image</span>
+      </td>
+    </tr>
+  </table>
+</div>
