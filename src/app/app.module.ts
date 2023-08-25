@@ -17,6 +17,7 @@ import { ResultsModule } from './results/results.module'
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactComponent } from './contact/contact.component';
     HeaderComponent,
     FooterComponent,
     ContactComponent,
-    routingComponents
+    routingComponents,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
