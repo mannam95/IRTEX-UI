@@ -6,17 +6,21 @@ import { ResultsComponent } from './results/results.component';
 import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
-  {path: 'home', component: BodyComponent},
-  {path: '', component: BodyComponent},
-  {path: 'results', component: ResultsComponent},
-  {path: 'contact', component: ContactComponent},
-  {path: 'about', component: AboutComponent}
+  { path: 'home', component: BodyComponent },
+  { path: '', component: BodyComponent },
+  { path: 'results', component: ResultsComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'about', component: AboutComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
 
-export const routingComponents = [BodyComponent, ResultsComponent, ContactComponent]
+export const routingComponents = [
+  BodyComponent,
+  ResultsComponent,
+  ContactComponent,
+];

@@ -1,96 +1,96 @@
 export class ServerResults {
-    Data: Data;
-    SemanticData: SemanticData;
+  Data: Data;
+  SemanticData: SemanticData;
 
-    constructor(Data: Data, SemanticData: SemanticData) {
-        this.Data = Data;
-        this.SemanticData = SemanticData;
-    }
+  constructor(Data: Data, SemanticData: SemanticData) {
+    this.Data = Data;
+    this.SemanticData = SemanticData;
+  }
 }
 
 export interface IServerResults {
-    Data: Data;
-    SemanticData: SemanticData;
+  Data: Data;
+  SemanticData: SemanticData;
 }
 
 interface SemanticData {
-    similarity_arr: Similarityarr[];
+  similarity_arr: Similarityarr[];
 }
 
 export interface Similarityarr {
-    base_img: string;
-    base_name_original: string;
-    query_img: string;
-    base_img_file_name: string;
-    base_name_original_file_name: string;
-    query_img_file_name: string;
-    sim_per_facet: Simperfacet[];
-    similarity_for_obj: number;
-    averageColorSimilarity: number;
-    averageShapeSimilarity: number;
-    averageTotalSimilarity: number;
-    overallDistScore: number;
+  base_img: string;
+  base_name_original: string;
+  query_img: string;
+  base_img_file_name: string;
+  base_name_original_file_name: string;
+  query_img_file_name: string;
+  sim_per_facet: Simperfacet[];
+  similarity_for_obj: number;
+  averageColorSimilarity: number;
+  averageShapeSimilarity: number;
+  averageTotalSimilarity: number;
+  overallDistScore: number;
 }
 
 interface Simperfacet {
-    sim_for_color: number;
-    sim_for_shape: number;
-    similarity_of_obj_type: Similarityofobjtype[];
+  sim_for_color: number;
+  sim_for_shape: number;
+  similarity_of_obj_type: Similarityofobjtype[];
 }
 
 interface Similarityofobjtype {
-    b_box: number[];
-    b_obj: string;
-    base_mask_name: string;
-    cat: string;
-    color_code: number[];
-    color_distance: number;
-    color_name: string;
-    q_box: number[];
-    q_obj: string;
-    query_mask_name: string;
-    size_distance: number;
+  b_box: number[];
+  b_obj: string;
+  base_mask_name: string;
+  cat: string;
+  color_code: number[];
+  color_distance: number;
+  color_name: string;
+  q_box: number[];
+  q_obj: string;
+  query_mask_name: string;
+  size_distance: number;
 }
 
 interface Data {
-    topScores: TopScore[];
-    QueryImgDetails: QueryImgDetails;
-    classification_result: number[];
-    classification_names: string[];
+  topScores: TopScore[];
+  QueryImgDetails: QueryImgDetails;
+  classification_result: number[];
+  classification_names: string[];
 }
 
 interface QueryImgDetails {
-    overallDistScore: number;
-    backforegrounddistance: number;
-    colordistance: number;
-    semanticcolordistance: number;
-    shapedistance: number;
-    HighLevelSemanticFeatureDistance: number;
-    mainFeatures: MainFeatures;
+  overallDistScore: number;
+  backforegrounddistance: number;
+  colordistance: number;
+  semanticcolordistance: number;
+  shapedistance: number;
+  HighLevelSemanticFeatureDistance: number;
+  mainFeatures: MainFeatures;
 }
 
 export interface TopScore {
-    name: string;
-    overallDistScore: number;
-    normlizedOverallDistScore: number;
-    backforegrounddistance: number;
-    normailzedBackforegrounddistance: number;
-    colordistance: number;
-    normalizedColordistance: number;
-    semanticcolordistance: number;
-    normalizedSemanticcolordistance: number;
-    shapedistance: number;
-    normalizedShapedistance: number;
-    HighLevelSemanticFeatureDistance: number;
-    normalizedHighLevelSemanticFeatureDistance: number;
-    mainFeatures: MainFeatures;
+  name: string;
+  overallDistScore: number;
+  normlizedOverallDistScore: number;
+  backforegrounddistance: number;
+  normailzedBackforegrounddistance: number;
+  colordistance: number;
+  normalizedColordistance: number;
+  semanticcolordistance: number;
+  normalizedSemanticcolordistance: number;
+  shapedistance: number;
+  normalizedShapedistance: number;
+  HighLevelSemanticFeatureDistance: number;
+  normalizedHighLevelSemanticFeatureDistance: number;
+  mainFeatures: MainFeatures;
 }
 
 interface MainFeatures {
-    shapesemantic: string[];
-    Shape: number[];
-    Color: number[];
-    BackgroundForeground: number[][];
-    HighLevelSemanticFeature: number[];
-    colorSemanticData: number[];
+  shapesemantic: string[];
+  Shape: number[];
+  Color: number[];
+  BackgroundForeground: number[][];
+  HighLevelSemanticFeature: number[];
+  colorSemanticData: number[];
 }

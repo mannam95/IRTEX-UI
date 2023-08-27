@@ -3,12 +3,11 @@ import SlideData from '../../assets/slideData.json';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class BackendAPIService {
-
   // Holds thee current searched image results
-  slideData:any;
+  slideData: any;
   queryImagePath: string;
 
   constructor() {
@@ -18,7 +17,11 @@ export class BackendAPIService {
   }
 
   // A method that will get the current selected image from the slide show and stores in a variable
-  public getCurrentImageResults(index: number, imageName: string, imagePath: string): void {
+  public getCurrentImageResults(
+    index: number,
+    imageName: string,
+    imagePath: string,
+  ): void {
     this.slideData = SlideData;
     this.slideData = this.slideData['slideData'][index];
     this.queryImagePath = imagePath;

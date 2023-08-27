@@ -8,9 +8,8 @@ describe('CarouselViewComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CarouselViewComponent ]
-    })
-    .compileComponents();
+      declarations: [CarouselViewComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

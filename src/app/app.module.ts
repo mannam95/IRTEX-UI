@@ -2,17 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 //Material Imports
-import {MaterialModule} from './sharedModule/material.module';
-
-
+import { MaterialModule } from './sharedModule/material.module';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BodyModule } from './body/body.module'
-import { ResultsModule } from './results/results.module'
+import { BodyModule } from './body/body.module';
+import { ResultsModule } from './results/results.module';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -26,7 +24,7 @@ import { AboutComponent } from './about/about.component';
     FooterComponent,
     ContactComponent,
     routingComponents,
-    AboutComponent
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,9 +34,9 @@ import { AboutComponent } from './about/about.component';
     FontAwesomeModule,
     BodyModule,
     ResultsModule,
-    MaterialModule
+    MaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
