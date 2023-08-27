@@ -4,3 +4,16 @@
     background-color: #474e5d;
     color: white;
   }
+
+  .citation-section{
+    padding: 50px;
+    background-color: #fff;
+  }
+
+  .citation-pre {
+    border: 1px solid black;
+    width: fit-content;
+    padding: 40px;
+    background-color: #1f252d;
+    color: white;
+  }
