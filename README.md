@@ -1,6 +1,6 @@
 # IRTEX
 
-## Still In-Progess
+* As of now it's hosted in the following URL: [IRTEX-Live-Demo](https://master.duj5ml1fcr1yp.amplifyapp.com/).
 
 ## Getting Started
 
@@ -9,7 +9,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* Now in order see the UI page running properly, you need to configure and run the business server(The instructions can be seen in business server part)  
 * Node Js, Angular-CLI needs to be installed.
 
 ### Installing
@@ -41,7 +40,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Online Usage:
 
 * As of now it's hosted in the following URL  
-[IRTEX](https://irtex-ui.herokuapp.com/).
+[IRTEX-Live-Demo](https://master.duj5ml1fcr1yp.amplifyapp.com/).
 * Can follow the same rules which are mentioned in offline usage.
 
 
